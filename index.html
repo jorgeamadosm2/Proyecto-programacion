@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Cuerar</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-3" href="./index.html">
+                    <i class="fas fa-layer-group me-2"></i>Cuerar
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link px-3 active" aria-current="page" href="./index.html">
+                            <i class="fas fa-home me-1"></i>Inicio
+                        </a>
+                        <a class="nav-link px-3" href="./pages/tienda.html">
+                            <i class="fas fa-store me-1"></i>Tienda
+                        </a>
+                        <a class="nav-link px-3" href="./pages/contacto.html">
+                            <i class="fas fa-envelope me-1"></i>Contacto
+                        </a>
+                        <a class="nav-link px-3" href="./pages/login.html">
+                            <i class="fas fa-sign-in-alt me-1"></i>Login
+                        </a>
+                        <a class="nav-link px-3" href="./pages/registro.html">
+                            <i class="fas fa-user-plus me-1"></i>Registro
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+<main>
+  <div class="banner">
+    <h1 class="display-1 fw-bold mb-4">¡Bienvenidos a Cuerar!</h1>
+    <p class="lead fs-3">Los mejores cueros con la mejor calidad</p>
+    <div class="mt-4">
+      <a href="./pages/tienda.html" class="btn btn-light btn-lg px-5 py-3 me-3">Ver Productos</a>
+      <a href="./pages/contacto.html" class="btn btn-outline-light btn-lg px-5 py-3">Contacto</a>
+    </div>
+  </div>
+  
+  <!-- Sección Sobre Nosotros -->
+  <section class="sobre-nosotros py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h2 class="display-4 fw-bold mb-4">Sobre Nosotros</h2>
+          <p class="lead mb-4">
+            Cuerar es una tienda dedicada a la venta de productos de cuero genuino. 
+            Nos enorgullece ofrecer artículos de alta calidad que combinan estilo y durabilidad.
+          </p>
+          <p class="fs-5">
+            Ya sea que estés buscando una cartera elegante, un cinturón resistente o accesorios únicos, 
+            en Cuerar encontrarás lo que necesitas.
+          </p>
+          <div class="mt-4">
+            <div class="d-flex align-items-center mb-3">
+              <span class="badge bg-dark fs-5 me-3">✓</span>
+              <span class="fs-5">100% Cuero Genuino</span>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+              <span class="badge bg-dark fs-5 me-3">✓</span>
+              <span class="fs-5">Artesanía de Calidad</span>
+            </div>
+            <div class="d-flex align-items-center">
+              <span class="badge bg-dark fs-5 me-3">✓</span>
+              <span class="fs-5">Envíos a Todo el País</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <div class="position-relative">
+            <img src="./img/cartera-cuero-g.jpg" alt="Productos Cuerar" class="img-fluid rounded shadow-lg" style="max-width: 500px;">
+            <div class="position-absolute top-0 start-0 badge bg-danger fs-4 m-3">Nuevo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Separador con estadísticas -->
+  <section class="stats-section py-5 bg-dark text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h3 class="display-4 fw-bold">15+</h3>
+          <p class="lead">Productos Únicos</p>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h3 class="display-4 fw-bold">10+</h3>
+          <p class="lead">Categorías</p>
+        </div>
+        <div class="col-md-4">
+          <h3 class="display-4 fw-bold">100%</h3>
+          <p class="lead">Calidad Garantizada</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <h2 class="text-center display-5 fw-bold my-5">Descubre Nuestros Productos Destacados</h2>
+  <div class="container my-5 pb-5">
+    <div class="row justify-content-center g-4">
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="card h-100 shadow-lg border-0 card-hover">
+          <div class="position-relative overflow-hidden">
+            <img src="./img/cartera-cuero-g.jpg" class="card-img-top card-img-zoom" alt="Cartera de cuero grande">
+            <span class="badge bg-success position-absolute top-0 end-0 m-3 fs-6">Destacado</span>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fs-4 fw-bold mb-3">Cartera de Cuero Grande</h5>
+            <p class="card-text text-muted mb-3">Cuero genuino premium, perfecta para el día a día.</p>
+            <div class="mt-auto">
+              <p class="fs-3 fw-bold text-dark mb-3">$40.000</p>
+              <a href="./pages/tienda.html" class="btn btn-dark btn-lg w-100 py-3">
+                <i class="bi bi-cart-plus"></i> Comprar Ahora
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="card h-100 shadow-lg border-0 card-hover">
+          <div class="position-relative overflow-hidden">
+            <img src="./img/cartera-cuero.jpg" class="card-img-top card-img-zoom" alt="Cartera de cuero clásica">
+            <span class="badge bg-primary position-absolute top-0 end-0 m-3 fs-6">Popular</span>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fs-4 fw-bold mb-3">Cartera de Cuero Clásica</h5>
+            <p class="card-text text-muted mb-3">Elegancia atemporal en cuero genuino de alta calidad.</p>
+            <div class="mt-auto">
+              <p class="fs-3 fw-bold text-dark mb-3">$40.000</p>
+              <a href="./pages/tienda.html" class="btn btn-dark btn-lg w-100 py-3">
+                <i class="bi bi-cart-plus"></i> Comprar Ahora
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="card h-100 shadow-lg border-0 card-hover">
+          <div class="position-relative overflow-hidden">
+            <img src="./img/cuero-de-cabra.jpg" class="card-img-top card-img-zoom" alt="Cuero de cabra">
+            <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-3 fs-6">Exclusivo</span>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fs-4 fw-bold mb-3">Cuero de Cabra Premium</h5>
+            <p class="card-text text-muted mb-3">Cuero natural suave y resistente, ideal para proyectos.</p>
+            <div class="mt-auto">
+              <p class="fs-3 fw-bold text-dark mb-3">$40.000</p>
+              <a href="./pages/tienda.html" class="btn btn-dark btn-lg w-100 py-3">
+                <i class="bi bi-cart-plus"></i> Comprar Ahora
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Botón ver más productos -->
+    <div class="text-center mt-5">
+      <a href="./pages/tienda.html" class="btn btn-outline-dark btn-lg px-5 py-3 fs-5">
+        Ver Todos los Productos →
+      </a>
+    </div>
+  </div>
+
+  <!-- Sección de llamada a la acción -->
+  <section class="cta-section py-5 bg-dark text-white text-center">
+    <div class="container">
+      <h2 class="display-4 fw-bold mb-4">¿Listo para encontrar tu producto ideal?</h2>
+      <p class="lead fs-4 mb-4">Explora nuestra colección completa de productos de cuero genuino</p>
+      <a href="./pages/tienda.html" class="btn btn-light btn-lg px-5 py-3 me-3">Ir a la Tienda</a>
+      <a href="./pages/registro.html" class="btn btn-outline-light btn-lg px-5 py-3">Crear Cuenta</a>
+    </div>
+  </section>
+</main>
+<footer class="footer-modern bg-dark text-white">
+    <div class="container py-5">
+        <div class="row g-4">
+            <!-- Columna 1: Logo y descripción -->
+            <div class="col-lg-4 col-md-6">
+                <h3 class="fw-bold mb-3">
+                    <i class="fas fa-layer-group me-2"></i>Cuerar
+                </h3>
+                <p class="text-light opacity-75">
+                    Los mejores productos de cuero genuino con la más alta calidad artesanal.
+                </p>
+                <div class="social-links mt-4">
+                    <a href="https://www.instagram.com/" target="_blank" class="social-link me-3">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https://x.com/?lang=es" target="_blank" class="social-link me-3">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" class="social-link">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Columna 2: Enlaces rápidos -->
+            <div class="col-lg-2 col-md-6">
+                <h5 class="fw-bold mb-3">Navegación</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <a href="./index.html" class="footer-link">
+                            <i class="fas fa-chevron-right me-2"></i>Inicio
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="./pages/tienda.html" class="footer-link">
+                            <i class="fas fa-chevron-right me-2"></i>Tienda
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="./pages/contacto.html" class="footer-link">
+                            <i class="fas fa-chevron-right me-2"></i>Contacto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Columna 3: Categorías -->
+            <div class="col-lg-3 col-md-6">
+                <h5 class="fw-bold mb-3">Categorías</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <a href="./pages/tienda.html" class="footer-link">
+                            <i class="fas fa-chevron-right me-2"></i>Alfombras
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="./pages/tienda.html" class="footer-link">
+                            <i class="fas fa-chevron-right me-2"></i>Cueros
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="./pages/tienda.html" class="footer-link">
+                            <i class="fas fa-chevron-right me-2"></i>Muebles
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="./pages/tienda.html" class="footer-link">
+                            <i class="fas fa-chevron-right me-2"></i>Accesorios
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Columna 4: Contacto -->
+            <div class="col-lg-3 col-md-6">
+                <h5 class="fw-bold mb-3">Contacto</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2 text-light opacity-75">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        Concepción, Tucumán
+                    </li>
+                    <li class="mb-2 text-light opacity-75">
+                        <i class="fas fa-phone me-2"></i>
+                        +54 3865 234570
+                    </li>
+                    <li class="mb-2 text-light opacity-75">
+                        <i class="fas fa-envelope me-2"></i>
+                        contacto@cuerar.com
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Línea divisoria -->
+        <hr class="my-4 bg-light opacity-25">
+        
+        <!-- Copyright -->
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="mb-0 text-light opacity-75">
+                    © 2025 Cuerar
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

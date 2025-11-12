@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Login | Cuerar</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-3" href="../index.html">
+                    <i class="fas fa-layer-group me-2"></i>Cuerar
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link px-3" href="../index.html">
+                            <i class="fas fa-home me-1"></i>Inicio
+                        </a>
+                        <a class="nav-link px-3" href="./tienda.html">
+                            <i class="fas fa-store me-1"></i>Tienda
+                        </a>
+                        <a class="nav-link px-3" href="./contacto.html">
+                            <i class="fas fa-envelope me-1"></i>Contacto
+                        </a>
+                        <a class="nav-link px-3 active" aria-current="page" href="./login.html">
+                            <i class="fas fa-sign-in-alt me-1"></i>Login
+                        </a>
+                        <a class="nav-link px-3" href="./registro.html">
+                            <i class="fas fa-user-plus me-1"></i>Registro
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="login-container">
+            <div class="row w-100 m-0">
+                <!-- Sección izquierda con imagen/info -->
+                <div class="col-lg-6 d-none d-lg-flex login-side-panel">
+                    <div class="d-flex flex-column justify-content-center align-items-center text-white p-5">
+                        <div class="mb-4">
+                            <h1 class="display-3 fw-bold mb-3">Bienvenido a Cuerar</h1>
+                            <p class="lead fs-4">Los mejores productos de cuero genuino</p>
+                        </div>
+                        <div class="features-list mt-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="feature-icon me-3">
+                                    <i class="bi bi-check-circle-fill fs-3"></i>
+                                </div>
+                                <span class="fs-5">Productos 100% Auténticos</span>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="feature-icon me-3">
+                                    <i class="bi bi-shield-check fs-3"></i>
+                                </div>
+                                <span class="fs-5">Compra Segura</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="feature-icon me-3">
+                                    <i class="bi bi-truck fs-3"></i>
+                                </div>
+                                <span class="fs-5">Envío a Todo el País</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sección derecha con formulario -->
+                <div class="col-lg-6 d-flex align-items-center justify-content-center p-5">
+                    <div class="login-form-wrapper">
+                        <form class="login-form-modern">
+                            <div class="text-center mb-5">
+                                <div class="login-icon mb-3">
+                                    <i class="bi bi-person-circle fs-1"></i>
+                                </div>
+                                <h2 class="fw-bold mb-2">Iniciar Sesión</h2>
+                                <p class="text-muted">Ingresa a tu cuenta para continuar</p>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="email" class="form-label fw-semibold">
+                                    <i class="bi bi-envelope-fill text-primary me-2"></i>Correo Electrónico
+                                </label>
+                                <input 
+                                    type="email" 
+                                    class="form-control form-control-lg" 
+                                    id="email"
+                                    name="email" 
+                                    placeholder="tu@email.com" 
+                                    required
+                                >
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="password" class="form-label fw-semibold">
+                                    <i class="bi bi-lock-fill text-primary me-2"></i>Contraseña
+                                </label>
+                                <div class="password-input-wrapper">
+                                    <input 
+                                        type="password" 
+                                        class="form-control form-control-lg" 
+                                        id="password"
+                                        name="password" 
+                                        placeholder="••••••••" 
+                                        required
+                                    >
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="rememberMe">
+                                    <label class="form-check-label text-muted" for="rememberMe">
+                                        Recordarme
+                                    </label>
+                                </div>
+                                <a href="#" class="text-decoration-none">¿Olvidaste tu contraseña?</a>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-dark btn-lg w-100 py-3 mb-4">
+                                <i class="bi bi-box-arrow-in-right me-2"></i>Iniciar Sesión
+                            </button>
+                            
+                            <div class="text-center">
+                                <p class="text-muted mb-3">¿No tienes cuenta?</p>
+                                <a href="./registro.html" class="btn btn-outline-dark btn-lg w-100 py-3">
+                                    <i class="bi bi-person-plus me-2"></i>Crear Cuenta Nueva
+                                </a>
+                            </div>
+                            
+                            <div class="divider my-4">
+                                <span class="text-muted">o continúa con</span>
+                            </div>
+                            
+                            <div class="social-login-buttons">
+                                <button type="button" class="btn btn-outline-secondary btn-lg w-100 mb-2">
+                                    <i class="bi bi-google me-2"></i>Google
+                                </button>
+                                <button type="button" class="btn btn-outline-secondary btn-lg w-100">
+                                    <i class="bi bi-facebook me-2"></i>Facebook
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-modern bg-dark text-white">
+        <div class="container py-5">
+            <div class="row g-4">
+                <!-- Columna 1: Logo y descripción -->
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="fw-bold mb-3">
+                        <i class="fas fa-layer-group me-2"></i>Cuerar
+                    </h3>
+                    <p class="text-light opacity-75">
+                        Los mejores productos de cuero genuino con la más alta calidad artesanal.
+                    </p>
+                    <div class="social-links mt-4">
+                        <a href="https://www.instagram.com/" target="_blank" class="social-link me-3">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="https://x.com/?lang=es" target="_blank" class="social-link me-3">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="https://www.facebook.com" target="_blank" class="social-link">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Columna 2: Enlaces rápidos -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-3">Navegación</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="../index.html" class="footer-link">
+                                <i class="fas fa-chevron-right me-2"></i>Inicio
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="./tienda.html" class="footer-link">
+                                <i class="fas fa-chevron-right me-2"></i>Tienda
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="./contacto.html" class="footer-link">
+                                <i class="fas fa-chevron-right me-2"></i>Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Columna 3: Categorías -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Categorías</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="./tienda.html" class="footer-link">
+                                <i class="fas fa-chevron-right me-2"></i>Alfombras
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="./tienda.html" class="footer-link">
+                                <i class="fas fa-chevron-right me-2"></i>Cueros
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="./tienda.html" class="footer-link">
+                                <i class="fas fa-chevron-right me-2"></i>Muebles
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="./tienda.html" class="footer-link">
+                                <i class="fas fa-chevron-right me-2"></i>Accesorios
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Columna 4: Contacto -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2 text-light opacity-75">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            Concepción, Tucumán
+                        </li>
+                        <li class="mb-2 text-light opacity-75">
+                            <i class="fas fa-phone me-2"></i>
+                            +54 3865 234570
+                        </li>
+                        <li class="mb-2 text-light opacity-75">
+                            <i class="fas fa-envelope me-2"></i>
+                            contacto@cuerar.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Línea divisoria -->
+            <hr class="my-4 bg-light opacity-25">
+            
+            <!-- Copyright -->
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0 text-light opacity-75">
+                        © 2025 Cuerar
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../java/login.js"></script>
+</body>
+</html>
