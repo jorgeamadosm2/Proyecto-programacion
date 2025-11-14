@@ -3,7 +3,7 @@
 ```
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │                     DIAGRAMA DE BASE DE DATOS - CUERAR                       │
-│                    Sistema de Gestión de Tienda de Cueros                   │
+│                    Sistema de Gestión de Tienda de Cueros                    │
 └──────────────────────────────────────────────────────────────────────────────┘
 
 
