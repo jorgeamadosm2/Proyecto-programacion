@@ -19,23 +19,24 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ms-auto">
-                        <a class="nav-link px-3" href="../index.html">
-                            <i class="fas fa-home me-1"></i>Inicio
-                        </a>
-                        <a class="nav-link px-3" href="./tienda.html">
-                            <i class="fas fa-store me-1"></i>Tienda
-                        </a>
-                        <a class="nav-link px-3" href="./contacto.html">
-                            <i class="fas fa-envelope me-1"></i>Contacto
-                        </a>
-                        <a class="nav-link px-3 active" aria-current="page" href="./login.html">
-                            <i class="fas fa-sign-in-alt me-1"></i>Login
-                        </a>
-                        <a class="nav-link px-3" href="./registro.html">
-                            <i class="fas fa-user-plus me-1"></i>Registro
-                        </a>
-                    </div>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="../index.html">
+                                <i class="fas fa-home me-1"></i>Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="./tienda.html">
+                                <i class="fas fa-store me-1"></i>Tienda
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="./contacto.html">
+                                <i class="fas fa-envelope me-1"></i>Contacto
+                            </a>
+                        </li>
+                        <!-- Login, Registro, Usuario y Carrito se agregan/quitan dinámicamente por navbar.js -->
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -261,6 +262,8 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../java/carrito.js"></script>
+    <script src="../java/navbar.js"></script>
     <script src="../java/login.js"></script>
 </body>
 </html>

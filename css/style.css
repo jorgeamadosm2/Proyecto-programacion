@@ -950,6 +950,57 @@ h3 {
   box-shadow: 0 0 0 0.25rem rgba(114, 106, 122, 0.25);
 }
 
+/* CARRITO EN NAVBAR */
+#cart-badge {
+  font-size: 0.7rem;
+  padding: 0.25em 0.5em;
+  min-width: 20px;
+  animation: pulse 2s infinite;
+}
+
+#cart-badge:empty {
+  display: none;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* USER DROPDOWN */
+.dropdown-menu {
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+  border: 1px solid #726a7a;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  min-width: 200px;
+}
+
+.dropdown-item {
+  color: #ffffff;
+  transition: all 0.3s ease;
+  padding: 10px 20px;
+}
+
+.dropdown-item:hover {
+  background: linear-gradient(135deg, #726a7a 0%, #5a5a5a 100%);
+  color: #ffffff;
+  transform: translateX(5px);
+}
+
+.dropdown-toggle::after {
+  margin-left: 0.5em;
+}
+
+/* Estilo para el nombre de usuario en navbar */
+.navbar-nav .nav-item .nav-link .fa-user-circle {
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
 /* FOOTER MODERNO */
 
 .footer-modern {

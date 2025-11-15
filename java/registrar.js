@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 sessionStorage.setItem('username', data.user.username);
                 sessionStorage.setItem('email', data.user.email);
                 sessionStorage.setItem('userId', data.user.id);
+                sessionStorage.setItem('user', JSON.stringify(data.user));
 
                 // Mensaje de éxito
                 alert(data.message);

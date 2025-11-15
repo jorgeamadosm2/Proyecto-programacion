@@ -1,12 +1,23 @@
 const API_URL = 'http://localhost:8000';
-let carrito = [];
+let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+// Cargar carrito al inicio
+document.addEventListener('DOMContentLoaded', function() {
+  actualizarCarrito();
+});
 
 function agregarAlCarrito(boton) {
   const nombre = boton.dataset.nombre;
   const precio = parseFloat(boton.dataset.precio);
 
   carrito.push({ nombre, precio });
+  localStorage.setItem('carrito', JSON.stringify(carrito));
   actualizarCarrito();
+  
+  // Actualizar contador en navbar
+  if (window.actualizarContadorCarrito) {
+    window.actualizarContadorCarrito();
+  }
 }
 
 function actualizarCarrito() {
@@ -67,7 +78,13 @@ function filtrarCategoria(categoria) {
 
 function eliminarDelCarrito(index) {
   carrito.splice(index, 1);
+  localStorage.setItem('carrito', JSON.stringify(carrito));
   actualizarCarrito();
+  
+  // Actualizar contador en navbar
+  if (window.actualizarContadorCarrito) {
+    window.actualizarContadorCarrito();
+  }
 }
 
 // Nuevas funciones para mostrar modal con resumen y completar la compra
@@ -131,7 +148,13 @@ async function completarCompra() {
     if (response.ok) {
       // Vaciar carrito y actualizar UI
       carrito = [];
+      localStorage.removeItem('carrito');
       actualizarCarrito();
+
+      // Actualizar contador en navbar
+      if (window.actualizarContadorCarrito) {
+        window.actualizarContadorCarrito();
+      }
 
       const modalEl = document.getElementById("confirmModal");
       const modalInstance = bootstrap.Modal.getInstance(modalEl);
@@ -145,4 +168,33 @@ async function completarCompra() {
     console.error('Error al conectar con el servidor:', error);
     alert('Error al conectar con el servidor. La compra no se pudo procesar.');
   }
+}
+
+// Función para finalizar compra desde modal (redirige a tienda si no estás ahí)
+function finalizarCompraDesdeModal() {
+  // Si no estamos en tienda.html, redirigir
+  if (!window.location.pathname.includes('tienda.html')) {
+    // Guardar que queremos finalizar
+    sessionStorage.setItem('finalizarCompra', 'true');
+    const isInPagesFolder = window.location.pathname.includes('/pages/');
+    const tiendaPath = isInPagesFolder ? './tienda.html' : './pages/tienda.html';
+    window.location.href = tiendaPath;
+  } else {
+    // Ya estamos en tienda, cerrar modal del carrito y abrir confirmación
+    const carritoModal = bootstrap.Modal.getInstance(document.getElementById('carritoModal'));
+    if (carritoModal) carritoModal.hide();
+    finalizarCompra();
+  }
+}
+
+// Al cargar tienda, verificar si se debe finalizar compra
+if (window.location.pathname.includes('tienda.html')) {
+  window.addEventListener('DOMContentLoaded', function() {
+    if (sessionStorage.getItem('finalizarCompra') === 'true') {
+      sessionStorage.removeItem('finalizarCompra');
+      setTimeout(() => {
+        finalizarCompra();
+      }, 500);
+    }
+  });
 }

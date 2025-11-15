@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 sessionStorage.setItem('username', data.user.username);
                 sessionStorage.setItem('email', data.user.email);
                 sessionStorage.setItem('userId', data.user.id);
+                sessionStorage.setItem('user', JSON.stringify(data.user));
 
                 alert(data.message);
                 window.location.href = '../index.html';
