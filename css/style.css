@@ -421,7 +421,7 @@ h3 {
   min-height: 100vh;
   display: flex;
   align-items: stretch;
-  background: linear-gradient(135deg, #000000 0%, #726a7a 100%);
+  background: linear-gradient(135deg, #383535 0%, #eae9eb 100%);
 }
 
 /* Panel lateral izquierdo */
@@ -498,7 +498,7 @@ h3 {
 }
 
 .login-form-modern h2 {
-  color: #212529;
+  color: #acaeaf;
   font-size: 2rem;
 }
 
